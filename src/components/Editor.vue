@@ -1,6 +1,5 @@
 <template>
   <div id="editor">
-    <p>{{mdtext}}</p>
     <textarea :value="mdtext" @input="update"></textarea>
   </div>
 </template>

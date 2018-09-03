@@ -1,14 +1,22 @@
 <template>
   <div id="editor">
-    <textarea :value="mdtext"></textarea>
+    <p>{{mdtext}}</p>
+    <textarea :value="mdtext" @input="update"></textarea>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Editor',
-  data: {
-    mdtext: ''
+  computed: {
+    mdtext() {
+      return this.$store.state.md;
+    }
+  },
+  methods: {
+    update(e) {
+      this.$store.dispatch('edit', e.target.value)
+    }
   }
 }
 </script>

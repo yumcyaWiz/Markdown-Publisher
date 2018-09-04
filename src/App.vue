@@ -27,12 +27,18 @@ html, body, #app {
   height: 100%;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #333;
+}
+
+#app {
   display: flex;
+  justify-content: space-evenly;
 }
 
 textarea, #editor, #viewer {
   width: 100%;
   height: 100%;
+  min-width: 50%;
+  word-wrap: break-all;
   vertical-align: top;
   box-sizing: border-box;
 }

@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <Editor />
-    <Viewer />
+    <Viewer class="markdown-body" />
   </div>
 </template>
 
 <script>
 import Editor from './components/Editor.vue'
 import Viewer from './components/Viewer.vue'
-import 'highlightjs/styles/hybrid.css'
+import 'highlightjs/styles/vs.css'
+import 'github-markdown-css/github-markdown.css'
 
 export default {
   name: 'app',
@@ -48,10 +49,5 @@ textarea {
   font-size: 14px;
   font-family: 'Monaco', courier, monospace;
   padding: 20px;
-}
-
-pre {
-  background: #EEE;
-  padding: 10px 10px;
 }
 </style>

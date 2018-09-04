@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
+    "github-markdown-css": "^2.10.0",
     "highlightjs": "^9.10.0",
     "lodash": "^4.17.10",
     "marked": "^0.5.0",
@@ -16,6 +18,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-service": "^3.0.0",
+    "vue-gh-pages": "^1.18.2",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "homepage": "https://github.com/yumcyaWiz/Markdown-Publisher"
 }
